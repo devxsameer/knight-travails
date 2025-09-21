@@ -58,7 +58,7 @@ const UI = {
     if (!(this.startPos.length === 2)) {
       this.startPos = [Number(square.dataset.x), Number(square.dataset.y)];
       square.classList.add("active");
-      square.innerHTML = `<img width="40px" src="./assets/horse.png" alt="horse" />`;
+      square.innerHTML = `<img width="100%" src="./assets/horse.png" alt="horse" />`;
     }
     // Second click → set end
     else if (!(this.desiredPos.length === 2)) {
@@ -111,7 +111,7 @@ const UI = {
 
       // Mark current square
       square.classList.add("active");
-      square.innerHTML = `<img width="40px" src="./assets/horse.png" alt="horse" />`;
+      square.innerHTML = `<img width="100%" src="./assets/horse.png" alt="horse" />`;
 
       // Replace previous square content with step number
       if (step > 0) {
@@ -145,7 +145,7 @@ const UI = {
     );
 
     square.classList.add("active");
-    square.innerHTML = `<img width="40px" src="./assets/horse.png" alt="horse" />`;
+    square.innerHTML = `<img width="100%" src="./assets/horse.png" alt="horse" />`;
   },
 
   /**
